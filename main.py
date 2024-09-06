@@ -8,16 +8,15 @@ cap = cv2.VideoCapture("./videos/people.mp4")
 assert cap.isOpened(), "Error reading video file"
 w, h, fps = (int(cap.get(x)) for x in (cv2.CAP_PROP_FRAME_WIDTH, cv2.CAP_PROP_FRAME_HEIGHT, cv2.CAP_PROP_FPS))
 
-line_points = [(120, 380), (580, 252)]  # line or region points
-classes_to_count = [0,]  # person and car classes for count
+line_points = [(120, 380), (580, 252)]  
+classes_to_count = [0,]  
 
-# Video writer
 video_writer = cv2.VideoWriter("./videos/object_counting_output.mp4",
                     cv2.VideoWriter_fourcc(*'mp4v'),
                     fps,
                     (w, h))
 
-# Init Object Counter
+
 counter = object_counter.ObjectCounter()
 counter.set_args(view_img=True,
     reg_pts=line_points,
