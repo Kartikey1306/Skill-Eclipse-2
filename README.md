@@ -5,7 +5,7 @@ This project implements an object counting system using the YOLOv8 object detect
 
 1. Clone the repository:
 ```bash
-git clone 
+git clone https://github.com/Kartikey1306/Skill-Eclipse-2
 ```
 2. Change directory to the cloned repository:
 ```bash
