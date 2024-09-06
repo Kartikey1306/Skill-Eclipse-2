@@ -9,7 +9,7 @@ git clone https://github.com/Kartikey1306/Skill-Eclipse-2
 ```
 2. Change directory to the cloned repository:
 ```bash
-cd object-tracking-entry-exit
+cd Object-Detection
 ```
 3. Install the required dependencies:
 ```bash
